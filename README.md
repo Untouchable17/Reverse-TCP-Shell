@@ -27,7 +27,7 @@ git clone https://github.com/Untouchable17/Reverse-TCP-Shell
 chmod +x install.sh
 ```
 <br/>
-3. Run the bash script `install.sh`
+3. Run the bash script `install.sh`<br>
 
 This script will automatically download and install all the necessary dependencies, compile the programs, and then offer you to choose 1 of 3 start options
 
@@ -51,7 +51,7 @@ g++ SecureTCPConnection.cpp -o SecureTCPConnection.o
 ```
 ./ReverseShell.o or ./SecureTCPConnection.o
 ```
-> You can add the correct path to global like this: `export PATH="$PATH:$(pwd)"` and then you can run the program by just entering their name ReverseShell.o or SecureTCPConnection.o
+<br>You can add the correct path to global like this: `export PATH="$PATH:$(pwd)"` and then you can run the program by just entering their name ReverseShell.o or SecureTCPConnection.o
 
 <h2 align="center">How to use</h2>
 <p>At first, start listening on the hacker's computer (or on your own) to the port you specified in the file (by default, port 4444), and then run the compiled infected file on the victim's computer</p>
