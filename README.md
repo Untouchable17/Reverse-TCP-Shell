@@ -27,9 +27,9 @@ git clone https://github.com/Untouchable17/Reverse-TCP-Shell
 chmod +x install.sh
 ```
 <br/>
-3. Run the bash script `install.sh`<br>
+3. Run the bash script `install.sh`
 
-This script will automatically download and install all the necessary dependencies, compile the programs, and then offer you to choose 1 of 3 start options
+<br>This script will automatically download and install all the necessary dependencies, compile the programs, and then offer you to choose 1 of 3 start options
 
 
 > Other Method: Manual Installation
