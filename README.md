@@ -70,13 +70,13 @@ show list shells: cat /etc/shells
 ```
 
 <h2 align="center">A little explanation of the code and a teaser</h2>
->This program is a type of software that allows an attacker to gain remote access to a computer or network without the knowledge or permission of the system owner.
+1. This program is a type of software that allows an attacker to gain remote access to a computer or network without the knowledge or permission of the system owner.
 
-> This code creates a TCP socket that connects to the specified server and port. Then the child process is created using the fork() call. The child process runs the /bin/bash shell, which allows an attacker to execute arbitrary commands on a remote system.
+2. This code creates a TCP socket that connects to the specified server and port. Then the child process is created using the fork() call. The child process runs the /bin/bash shell, which allows an attacker to execute arbitrary commands on a remote system.
 
-> In the parent process, commands are read from a remote client via a socket. The received commands are passed to the child process for execution using the open() call, and the results of executing commands are sent back to the client via the socket. The parent process constantly waits for commands from the client and executes them until the client closes the connection.
+3. In the parent process, commands are read from a remote client via a socket. The received commands are passed to the child process for execution using the open() call, and the results of executing commands are sent back to the client via the socket. The parent process constantly waits for commands from the client and executes them until the client closes the connection.
 
-> In general, this code can be used for illegal access to a computer or network, so its use for illegal purposes is prohibited.
+4. In general, this code can be used for illegal access to a computer or network, so its use for illegal purposes is prohibited.
 
 # Contact Developer
 
