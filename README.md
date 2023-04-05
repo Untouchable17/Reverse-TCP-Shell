@@ -16,7 +16,7 @@
 
 <p align="center">Installing and using program process:</p>
 
-<b align="center">Execute all commands on behalf of the superuser and set your machine ip and port in files</b>
+<p align="center">Execute all commands on behalf of the superuser and set your machine ip and port in files</p>
 
 1. Download or clone this repository.
 ```
