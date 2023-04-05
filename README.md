@@ -66,10 +66,12 @@ nc -nlvp SET_PORT (ex. 4444)
 ```
 script -a /dev/null
 ```
-<br>```
+
+```
 change shell: chsh -s /bin/{shell}
 ```
-<br>```
+
+```
 show list shells: cat /etc/shells
 ```
 
