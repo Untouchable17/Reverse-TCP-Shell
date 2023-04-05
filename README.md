@@ -85,7 +85,7 @@ show list shells: cat /etc/shells
 
 - In general, this code can be used for illegal access to a computer or network, so its use for illegal purposes is prohibited.
 
-<br>
+
 ## Contact Developer
 
 
