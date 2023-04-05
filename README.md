@@ -65,7 +65,11 @@ nc -nlvp SET_PORT (ex. 4444)
 4. If interactivity has not appeared, execute this command
 ```
 script -a /dev/null
+```
+<br>```
 change shell: chsh -s /bin/{shell}
+```
+<br>```
 show list shells: cat /etc/shells
 ```
 
