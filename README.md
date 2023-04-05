@@ -83,9 +83,9 @@ show list shells: cat /etc/shells
 
 - In the parent process, commands are read from a remote client via a socket. The received commands are passed to the child process for execution using the open() call, and the results of executing commands are sent back to the client via the socket. The parent process constantly waits for commands from the client and executes them until the client closes the connection.
 
-4. In general, this code can be used for illegal access to a computer or network, so its use for illegal purposes is prohibited.
+- In general, this code can be used for illegal access to a computer or network, so its use for illegal purposes is prohibited.
 
-# Contact Developer
+<h3 align="center">Contact Developer</h3>
 
 
     Telegram:           @secdet17
