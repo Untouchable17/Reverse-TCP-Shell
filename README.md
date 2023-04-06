@@ -55,10 +55,11 @@ g++ SecureTCPConnection.cpp -o SecureTCPConnection.o
 
 
 <h2 align="center">Install and build the apk file for Android</h2>
-<p><b>Method 1:</b> To build, use the `gradle build` command in the `Android Studio` terminal. This command will compile the source code and create an `APK file` that can be installed on an Android device</p>
+<b>Method 1:</b> To build, use the `gradle build` command in the `Android Studio` terminal. This command will compile the source code and create an `APK file` that can be installed on an Android device
+<br>
+<br>
 
-
-<p><b>Method 2:</b>Install Android SDK (Native Development Kit) and compile the program code in C++ with the command `ndk-build` and then assemble the APK file using `ant release` command</p>
+<b>Method 2:</b>Install Android SDK (Native Development Kit) and compile the program code in C++ with the command `ndk-build` and then assemble the APK file using `ant release` command
 
 
 <h2 align="center">How to use</h2>
