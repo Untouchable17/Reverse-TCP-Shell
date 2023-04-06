@@ -59,7 +59,7 @@ g++ SecureTCPConnection.cpp -o SecureTCPConnection.o
 <br>
 <br>
 
-<b>Method 2:</b>Install Android SDK (Native Development Kit) and compile the program code in C++ with the command `ndk-build` and then assemble the APK file using `ant release` command
+<b>Method 2:</b>Install `Android SDK` (Native Development Kit) and compile the program code in C++ with the command `ndk-build` and then assemble the APK file using `ant release` command
 
 
 <h2 align="center">How to use</h2>
