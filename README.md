@@ -53,7 +53,7 @@ g++ SecureTCPConnection.cpp -o SecureTCPConnection.o
 ```
 <br>You can add the correct path to global like this: `export PATH="$PATH:$(pwd)"` and then you can run the program by just entering their name ReverseShell.o or SecureTCPConnection.o
 
-
+<br>
 <h2 align="center">Install and build the apk file for Android</h2>
 <b>Method 1:</b> To build, use the `gradle build` command in the `Android Studio` terminal. This command will compile the source code and create an `APK file` that can be installed on an Android device
 <br>
@@ -61,7 +61,7 @@ g++ SecureTCPConnection.cpp -o SecureTCPConnection.o
 
 <b>Method 2:</b>Install `Android SDK` (Native Development Kit) and compile the program code in C++ with the command `ndk-build` and then assemble the APK file using `ant release` command
 
-
+<br>
 <h2 align="center">How to use</h2>
 <p>At first, start listening on the hacker's computer (or on your own) to the port you specified in the file (by default, port 4444), and then run the compiled infected file on the victim's computer</p>
 
