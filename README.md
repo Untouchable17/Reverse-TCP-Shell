@@ -53,6 +53,13 @@ g++ SecureTCPConnection.cpp -o SecureTCPConnection.o
 ```
 <br>You can add the correct path to global like this: `export PATH="$PATH:$(pwd)"` and then you can run the program by just entering their name ReverseShell.o or SecureTCPConnection.o
 
+> For Windows
+1. Compile the program using the flag -lws2_32
+```
+g++ winshell.cpp -o winshell.exe -lws2_32
+```
+2. Start the event listener and run the compiled program
+
 <br>
 <h2 align="center">Install and build the apk file for Android</h2>
 <b>Method 1:</b> To build, use the `gradle build` command in the `Android Studio` terminal. This command will compile the source code and create an `APK file` that can be installed on an Android device
