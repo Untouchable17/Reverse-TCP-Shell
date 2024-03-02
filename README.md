@@ -1,6 +1,6 @@
 <h1 align="center">
     <a href="https://github.com/Untouchable17/Reverse-TCP-Shell">
-        <img src="https://i.ibb.co/sFWgnqx/cvvccv.png" width="700">
+        <img src="https://i.ibb.co/5LwHcv7/shadowshell.png" width="700">
     </a>
 </h1>
 
